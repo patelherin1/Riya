@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Riya 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="music/song.mp3" loop></audio>
+
+  <!-- Loading Screen -->
+  <div id="loading" class="screen">
+    <h1>🎂 Loading Surprise...</h1>
+  </div>
+
+  <!-- Welcome Screen -->
+  <div id="welcome" class="screen hidden">
+    <h1>Happy Birthday Riya ❤️</h1>
+    <button onclick="startJourney()">Start 🎉</button>
+  </div>
+
+  <!-- Balloon Game -->
+  <div id="balloon-game" class="screen hidden">
+    <h2>🎈 Pop 3 Balloons to Continue!</h2>
+    <div id="balloons"></div>
+  </div>
+
+  <!-- Cake Scene -->
+  <div id="cake-scene" class="screen hidden">
+    <h2>🎂 Here’s Your Cake!</h2>
+    <img src="images/cake.png" alt="Cake" class="cake">
+    <button onclick="cutCake()">Cut Cake 🍰</button>
+  </div>
+
+  <!-- Slideshow -->
+  <div id="slideshow" class="screen hidden">
+    <h2>📸 Memories with You</h2>
+    <img id="slide" src="images/1.jpg" class="slide">
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- Video Scene -->
+  <div id="video-scene" class="screen hidden">
+    <h2>🎥 Special Videos</h2>
+    <video src="videos/1.mp4" controls autoplay></video>
+    <video src="videos/2.mp4" controls></video>
+    <button onclick="nextVideo()">Continue 🌟</button>
+  </div>
+
+  <!-- Finale Fireworks -->
+  <div id="finale" class="screen hidden">
+    <h1>🎆 Happy Birthday Riya 🎆</h1>
+    <canvas id="fireworks"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
